@@ -1,0 +1,35 @@
+Data Preprocessing:
+
+We load the MNIST dataset, which consists of images of handwritten digits (0-9).
+The pixel values in the images are normalized to a range between 0 and 1, 
+making it easier for the neural network to learn.
+
+Neural Network Architecture:
+
+The neural network consists of two layers:
+
+Hidden Layer: This layer has 128 units and uses the Rectified Linear Unit (ReLU) activation 
+function. ReLU is a common choice for hidden layers as it introduces non-linearity.
+Output Layer: This layer has 10 units (one for each digit) and uses the softmax 
+activation function, which is suitable for multi-class classification problems like MNIST.
+
+Model Compilation:
+
+The model is compiled with the Adam optimizer, a popular choice for its adaptive learning rate.
+Categorical crossentropy is chosen as the loss function since it measures the difference 
+between predicted and actual distributions for multi-class classification.
+Accuracy is selected as the metric to monitor, providing a human-readable measure 
+of how well the model is performing.
+
+Training:
+
+The model is trained for 5 epochs, meaning it goes through the entire training dataset five times.
+A batch size of 64 is used, indicating that the model updates its weights after processing 
+each batch of 64 images. 20% of the training data is reserved for validation, allowing us to 
+monitor the model's performance on data it hasn't seen during training.
+
+Evaluation:
+
+The trained model is evaluated on the test set to assess its performance on unseen data.
+The test accuracy and loss are printed to provide insights into how well the model generalizes
+to new, unseen examples.

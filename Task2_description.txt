@@ -1,0 +1,20 @@
+
+In the provided script, I organized the database with a single table named "books" to store information about books. The table has the following columns:
+
+id (INTEGER, PRIMARY KEY, AUTOINCREMENT): This column serves as the primary key for uniquely identifying each book. It auto-increments, ensuring that each book added to the database gets a unique identifier.
+
+title (TEXT): This column stores the title of the book.
+
+author (TEXT): This column stores the name of the author of the book.
+
+year (INTEGER): This column stores the publication year of the book.
+
+Here's why I chose this structure:
+
+Simplicity: The structure is kept simple for the purpose of the example. It includes the essential information about a book—title, author, and publication year.
+
+Normalization: The design is in the first normal form (1NF) since each column contains atomic (indivisible) values. The "books" table is also in the second normal form (2NF), as there are no partial dependencies on the primary key.
+
+Scalability: While this structure is suitable for a small-scale application, it may need modification for larger applications. For instance, if there is a requirement for more complex relationships (e.g., multiple authors for a book), the schema might need to be adjusted.
+
+Readability: The structure is easy to read and understand, which is crucial for maintenance and collaboration.

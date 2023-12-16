@@ -1,0 +1,36 @@
+Import Statements: Import required modules (googlemaps and datetime).
+
+Function Definition (get_geocoding_info):
+
+Parameters: api_key (Google Maps API key) and address (address to be geocoded).
+Google Maps Client Initialization:
+
+Initialize a Google Maps client using the provided API key.
+Try-Except Block for Error Handling:
+
+Catch exceptions during the API request and data processing.
+API Request and Data Processing:
+
+Send a geocoding request to Google Maps API using the geocode method.
+Check for results and extract formatted address, latitude, and longitude.
+Print Output:
+
+Print geocoding information to the console.
+Main Block:
+
+Initialize API key and address.
+Call the get_geocoding_info function.
+Data Processing Approach:
+
+Google Maps API Interaction:
+
+Use the googlemaps library to create a client for Google Maps Geocoding API.
+Error Handling:
+
+Use try-except block to catch exceptions during API requests and data processing.
+Data Extraction:
+
+Extract relevant information from the API response, such as formatted address, latitude, and longitude.
+Output:
+
+Print the final geocoding information to the console.
